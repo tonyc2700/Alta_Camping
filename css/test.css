@@ -1,0 +1,173 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  margin: 0px;
+}
+
+div {
+  
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*********************************************************************************/
+/*  Fixed header                                                                 */
+/*********************************************************************************/
+#fixed-header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border: 0px;
+  height: 40px;
+  /*background-color: #ccccff;*/
+  /*background-color: #383838;*/
+  background-color: #0A1F33;
+}
+
+.fixed-header-name {
+  font-family: Lobster, cursive;
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 6px;
+  margin-left: 10px;
+  float: left;
+  color: white;
+}
+
+#footer {
+  clear: both;
+}
+
+.icons-right {
+  float: right;
+  margin-right: 200px;
+  margin-top: 5px;
+}
+
+ul li {
+  display: inline;
+  height: 10px;
+  border-right: 100px;
+  margin-right: 5px;
+}
+
+/*********************************************************************************/
+/*  Main Header                                                                  */
+/*********************************************************************************/
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header { 
+  padding-top: 10px;
+}
+
+#header {
+  position: relative;
+  background: #ddd url(../images/header.jpg) no-repeat center;
+  background-size: cover;
+  height: 600px;
+  /*width: 100%;*/
+}
+
+#logo {
+  font-size: 50px;
+  margin-top: 200px;
+  font-family: Lobster, cursive;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+.logoSlogan {
+  /*visibility: hidden;*/
+  color: white;
+}
+
+#slogan {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Oxygen, helvetica, cursive;
+  position: absolute;
+  left: 420px;
+  top: 305px;
+}
+
+#nav {
+  /*visibility: hidden;*/
+  width: 550px;
+  height: 35px;
+  font-size: 16px;
+  font-family: Oxygen, Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  /*text-shadow: 3px 2px 3px #333333;*/
+  background-color: #8AD9FF;
+  border-radius: 8px;
+  position: absolute;
+  left: 400px;
+  top: 400px;
+}
+#nav ul {
+    height: auto;
+    padding: 8px;
+    margin: 0px;
+}
+#nav li { 
+display: inline; 
+/*padding: 20px; */
+}
+#nav a {
+    text-decoration: none;
+    color: #00F;
+    padding: 8px 8px 8px 8px;
+}
+#nav a:hover {
+    color: white;
+    /*background-color: #FFF;*/
+}
+
+#menu {
+  /*visibility: hidden;*/
+  width: 550px;
+  height: 35px;
+  font-size: 16px;
+  font-family: Oxygen, Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  /*text-shadow: 3px 2px 3px #333333;*/
+  /*background-color: #8AD9FF;*/
+  background-color: #0A1F33;
+  border-radius: 14px;
+  position: absolute;
+  left: 420px;
+  top: 400px;
+}
+#menu ul {
+    height: auto;
+    padding: 8px;
+    margin: 0px;
+}
+#menu li { 
+display: inline; 
+/*padding: 20px; */
+}
+#menu a {
+    text-decoration: none;
+    /*color: #00F;*/  
+    color: black;
+    padding: 8px 8px 8px 8px;
+}
+#menu #active a{
+  color: white;
+}
+#menu a:hover {
+    color: white;
+    /*background-color: #FFF;*/
+}
