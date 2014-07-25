@@ -138,7 +138,7 @@ body {
 /*  Main Section Header                                                          */
 /*********************************************************************************/
 
-.container {
+.main {
   position: auto;
   width: 100%;
   margin-left: auto;
@@ -170,3 +170,33 @@ body {
   left: 420px;
   /*top: 305px;*/
 }
+
+/*********************************************************************************/
+/*  Footer                                                                       */
+/*********************************************************************************/
+/*.container {
+  position: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+} 
+#footer {
+  position: relative;
+  background: #121212;
+  color: rgba(255,255,255,.4);
+}
+#footer header h2 {
+  color: #FFF;
+}
+#copyright {
+  position: auto;
+  padding: 3em 0em;
+  text-align: center;
+  color: rgba(255,255,255,.2);
+}
+#copyright .container {
+}
+#copyright a {
+  text-decoration: none;
+  color: rgba(255,255,255,.3);
+} */  
