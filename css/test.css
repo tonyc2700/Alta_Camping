@@ -179,7 +179,7 @@ body {
 /*  Footer                                                                       */
 /*********************************************************************************/
 #footer1{
-  height: 100px;
+  height: 200px;
   background-color: rgb(20,69,118);
 }
 #footer2{
@@ -192,30 +192,4 @@ body {
   padding-top: 10px;
   text-align: center;
   font-size: 16px
-}
-/*.container {
-  position: auto;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 } 
-#footer {
-  position: relative;
-  background: #121212;
-  color: rgba(255,255,255,.4);
-}
-#footer header h2 {
-  color: #FFF;
-}
-#copyright {
-  position: auto;
-  padding: 3em 0em;
-  text-align: center;
-  color: rgba(255,255,255,.2);
-}
-#copyright .container {
-}
-#copyright a {
-  text-decoration: none;
-  color: rgba(255,255,255,.3);
-} */  

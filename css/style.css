@@ -1,55 +1,139 @@
 h1 {
   text-align: center;
 }
-
-body {
-  margin: 0px;
-}
-
-div {
-  
-}
-
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: inherit;
   text-decoration: none;
+}
+body {
+  margin: 0px;
 }
 
 /*********************************************************************************/
 /*  Fixed header                                                                 */
 /*********************************************************************************/
 #fixed-header {
+  z-index: 100px;
   position: fixed;
-  z-index: 1;
   width: 100%;
-  border: 0px;
   height: 40px;
-  /*background-color: #ccccff;*/
-  /*background-color: #383838;*/
-  background-color: #0A1F33;
-}
+  /*background-color: #0A1F33;*/
+  background-color: rgb(10,31,51);
 
+}
 .fixed-header-name {
   font-family: Lobster, cursive;
   font-size: 20px;
   font-weight: 100;
-  margin-top: 6px;
+  margin-top: -12px;
   margin-left: 10px;
   float: left;
   color: white;
+  text-decoration: none;
 }
 
-#footer {
-  clear: both;
+.nav {
+  display: block;
+  list-style-type: none;
+  margin-top: -20px;
+  margin-left: 55%;
+  overflow: hidden;
+  width: 50%; 
+  height: 41px;
+}
+.nav ul {
+  margin-top: -8px;
+  padding: 0;
+}
+.nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; 
+}
+.nav ul li a {
+  font-family: Oxygen, helvetica, cursive;
+  font-size: 14px;
+  color: white;
+  display: block;
+  line-height: 56px;
+  padding: 0 20px;
+  text-decoration: none;
+}
+.nav > ul > li > a > .caret {
+  border-top: 4px solid white;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
+  vertical-align: middle;
+  
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+    transition: color 0.1s linear; 
+}
+.nav > ul > li:hover {
+  /*background-color: rgb( 40, 44, 47);*/
+  /*background-color: rgba( 10, 31, 51, 0.1);*/
+  background-color: rgb( 26, 81, 137);
+}
+.nav > ul > li:hover > a {
+  color: rgb( 255, 255, 255 );
+}
+.nav > ul > li:hover > a > .caret {
+  border-top-color: rgb( 255, 255, 255 );
+}
+.nav > ul > li > div {
+  /*background-color: rgb( 40, 44, 47 );*/
+  background-color: rgb( 26, 81, 137);
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  display: none;
+  margin-top: -8px;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 100;
+  
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+.nav > ul > li > div ul > li {
+  display: block;
+  margin-top: 8px;
+}
+.nav > ul > li > div ul > li > a {
+  color: #fff;
+  display: block;
+  padding: auto;
+  text-decoration: none;
+}
+.nav > ul > li > div ul > li:hover > a {
+  background-color: rgba( 255, 255, 255, 0.1);
+}
+.nav > ul > li:hover > div {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .icons-right {
   float: right;
-  margin-right: 200px;
-  margin-top: 5px;
+  margin-right: 0%;
+  margin-top: -34px;
 }
-
-ul li {
+.icons-right li {
   display: inline;
   height: 10px;
   border-right: 100px;
@@ -57,29 +141,23 @@ ul li {
 }
 
 /*********************************************************************************/
-/*  Main Header                                                                  */
+/*  Main Section Header                                                          */
 /*********************************************************************************/
-.container {
+
+#main {
+  position: auto;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-#header { 
-  padding-top: 10px;
-}
-
-#header {
-  position: relative;
   background: #ddd url(../images/header.jpg) no-repeat center;
   background-size: cover;
   height: 600px;
-  /*width: 100%;*/
 }
 
 #logo {
-  font-size: 50px;
-  margin-top: 200px;
+  /*font-size: 50px;*/
+  margin-top: 0px;
+  padding-top: 210px;
   font-family: Lobster, cursive;
   font-size: 4em;
   font-weight: 100;
@@ -94,80 +172,26 @@ ul li {
   font-size: 24px;
   font-weight: bold;
   font-family: Oxygen, helvetica, cursive;
-  position: absolute;
-  left: 420px;
-  top: 305px;
+  margin-left: 400px;
 }
 
-#nav {
-  /*visibility: hidden;*/
-  width: 550px;
-  height: 35px;
-  font-size: 16px;
-  font-family: Oxygen, Tahoma, Geneva, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  /*text-shadow: 3px 2px 3px #333333;*/
-  background-color: #8AD9FF;
-  border-radius: 8px;
-  position: absolute;
-  left: 400px;
-  top: 400px;
+/*********************************************************************************/
+/*  Footer                                                                       */
+/*********************************************************************************/
+#footer1{
+  height: 200px;
+  background-color: rgb(20,69,118);
+  bottom: 41px;
 }
-#nav ul {
-    height: auto;
-    padding: 8px;
-    margin: 0px;
+#footer2{
+  height: 41px;
+  background-color: rgb(10,31,51);
+  bottom: 0px;
 }
-#nav li { 
-display: inline; 
-/*padding: 20px; */
-}
-#nav a {
-    text-decoration: none;
-    color: #00F;
-    padding: 8px 8px 8px 8px;
-}
-#nav a:hover {
-    color: white;
-    /*background-color: #FFF;*/
-}
-
-#menu {
-  /*visibility: hidden;*/
-  width: 550px;
-  height: 35px;
-  font-size: 16px;
-  font-family: Oxygen, Tahoma, Geneva, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  /*text-shadow: 3px 2px 3px #333333;*/
-  /*background-color: #8AD9FF;*/
-  background-color: #0A1F33;
-  border-radius: 14px;
-  position: absolute;
-  left: 420px;
-  top: 400px;
-}
-#menu ul {
-    height: auto;
-    padding: 8px;
-    margin: 0px;
-}
-#menu li { 
-display: inline; 
-/*padding: 20px; */
-}
-#menu a {
-    text-decoration: none;
-    /*color: #00F;*/  
-    color: black;
-    padding: 8px 8px 8px 8px;
-}
-#menu #active a{
+#trademark{
   color: white;
-}
-#menu a:hover {
-    color: white;
-    /*background-color: #FFF;*/
-}
+  margin-top: 0px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 16px
+} 
