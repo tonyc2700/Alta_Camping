@@ -94,7 +94,7 @@ body {
   /*background-color: rgb( 40, 44, 47 );*/
   background-color: rgb( 26, 81, 137);
   border-top: 0;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 15px 15px;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
   display: none;
   margin-top: -8px;
@@ -112,6 +112,7 @@ body {
 .nav > ul > li > div ul > li {
   display: block;
   margin-top: 8px;
+  /*margin-bottom: 2px;*/
 }
 .nav > ul > li > div ul > li > a {
   color: #fff;
@@ -121,6 +122,7 @@ body {
 }
 .nav > ul > li > div ul > li:hover > a {
   background-color: rgba( 255, 255, 255, 0.1);
+  border-radius: 15px 15px 15px 15px;
 }
 .nav > ul > li:hover > div {
   display: block;
@@ -151,13 +153,13 @@ body {
   margin-right: auto;
   background: #ddd url(../images/header.jpg) no-repeat center;
   background-size: cover;
-  height: 600px;
+  height: 650px;
 }
 
 #logo {
   /*font-size: 50px;*/
   margin-top: 0px;
-  padding-top: 210px;
+  padding-top: 90px;
   font-family: Lobster, cursive;
   font-size: 4em;
   font-weight: 100;
@@ -179,9 +181,38 @@ body {
 /*  Footer                                                                       */
 /*********************************************************************************/
 #footer1{
-  height: 200px;
-  background-color: rgb(20,69,118);
+  height: 150px;
+  /*background-color: rgb(20,69,118);*/
+  /*background-color: rgb(14,48,82);*/
+  background-color: rgb(15,46,78);
   bottom: 41px;
+}
+.address{
+  margin-left: 40px;
+  /*margin-top: 10px;*/
+  float: left;
+  width: 30%;
+  /*border: 1px solid blue;*/
+}
+.address h2 {
+  color: white;
+  font-family: 'Montserrat', Oxygen, sans-serif;
+}
+.address p {
+  margin-top: -10px;
+  color: white;
+  font-size: 16px
+}
+.address a {
+  text-decoration: none;
+}
+hr.grey {
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+  /*border-bottom: 1px solid rgb(69, 64, 151);*/
+  /*margin: 10px 450px 0px 450px;*/
+  /*margin-top: 5px;*/
+  margin-right: 150px;
 }
 #footer2{
   height: 41px;
@@ -195,3 +226,14 @@ body {
   text-align: center;
   font-size: 16px
 } 
+.icons-left {
+  float: left;
+  /*margin-left: -10px;*/
+  margin-top: -25px;
+}
+.icons-left li {
+  display: inline;
+  height: 10px;
+  border-left: 100px;
+  margin-left: 5px;
+}
