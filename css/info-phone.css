@@ -1,0 +1,88 @@
+/*********************************************************************************/
+/*  Information Footer                                                           */
+/*********************************************************************************/
+#container {
+  background: #ddd url(../images/infoHeader.jpg) no-repeat center;
+  background-size: cover;
+  /*background-color: blue;*/
+  width: 100%;
+  height: 300px;
+}
+#main-info{
+  padding-top: 1px;
+  position: auto;
+  width: 100%;
+  /*background-color: rgb(40,125,210);*/
+  /*background: #fff url(images/overlay.png) repeat;*/
+}
+#main-info h1 {
+  text-align: center;
+}
+#left{
+  /*margin-left: 20px;*/
+  margin-top: 40px;
+  /*float: left;*/
+  width: 90%;
+  /*border: 1px solid blue;*/
+}
+#right{
+  margin-left: 20%;
+  /*float: right;*/
+  width: 80%;
+  /*border: 1px solid blue;*/
+  /*padding: 2%;*/
+}
+h1, h2{
+  /*text-align: center;*/
+  /*font-family: Oxygen, helvetica, cursive;*/
+  font-weight: 400;
+  font-family: 'Montserrat', Oxygen, sans-serif;
+}
+p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+ul {
+    list-style-type: none;
+}
+ul li a {
+  font-weight: 100px;
+}
+.hr {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+  margin: 10px 0;
+  float: left;
+}
+hr {
+  border: 0;
+  margin: 10px 0;
+}
+hr.blue {
+  border: 0;
+  border-bottom: 1px solid rgb(69, 64, 151);
+  /*margin: 10px 150px ;*/  
+  margin-right: 30%;
+}
+hr.grey {
+  border: 0;
+  /*border-bottom: 1px solid #e5e5e5;*/
+  border-bottom: 1px solid rgb(69, 64, 151);
+  /*margin: 10px 450px 0px 450px;*/
+  margin: 10px 20% ;
+}
+.infoSlogan {
+  text-align: center;
+  font-size: 18px;
+  font-family: 
+}
+#map_canvas {
+  margin-left: 3%;
+  width: 100%;
+  height: 375px;
+}

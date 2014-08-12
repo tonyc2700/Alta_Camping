@@ -1,0 +1,256 @@
+h1 {
+  text-align: center;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  margin: 0%;
+  /*background: grey;*/
+}
+/*********************************************************************************/
+/*  Fixed header                                                                 */
+/*********************************************************************************/
+#fixed-header {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 220px;
+  /*background-color: #0A1F33;*/
+  background-color: rgb(10,31,51);
+}
+.fixed-header-name {
+  /*visibility: hidden;*/
+  font-family: Lobster, cursive;
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: -12px;
+  margin-left: 10%;
+  float: left;
+  text-decoration: none;
+  color: white;
+}
+.icons-right {
+  position: fixed;
+  /*visibility: hidden;*/
+  float: right;
+  margin-left: 50%;
+  margin-top: 40px;
+}
+.icons-right li {
+  display: inline;
+  height: 10px;
+  border-right: 100px;
+  margin-right: 5px;
+}
+
+.nav {
+  /*width: auto;*/
+  position: fixed;
+  float: left;
+  height: 100%;
+  /*background: yellow;*/
+  height: 150px;
+  margin-top: 30px;
+}
+.nav > ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+.nav > ul > li {
+  
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; 
+}
+.nav > ul > li > a {
+  font-family: Oxygen, helvetica, cursive;
+  font-size: 14px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+.nav > ul > li > a > .caret {
+  border-top: 4px solid white;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
+  vertical-align: middle;
+  
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+    transition: color 0.1s linear; 
+}
+.nav > ul > li:hover {
+  /*background-color: rgb( 40, 44, 47);*/
+  /*background-color: rgba( 10, 31, 51, 0.1);*/
+  background-color: rgb( 26, 81, 137);
+}
+.nav > ul > li:hover > a {
+  color: rgb( 255, 255, 255 );
+}
+.nav > ul > li:hover > a > .caret {
+  border-top-color: rgb( 255, 255, 255 );
+}
+.nav > ul > li > div {
+  width: 130px;
+  /*background-color: rgb( 40, 44, 47 );*/
+  background-color: rgb( 26, 81, 137);
+  /*border-radius: 0 15px 15px 15px;*/
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  display: none;
+  margin-top: -26px;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 100;
+  margin-left: 95px;
+
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+.nav > ul > li > div > ul {
+  /*margin-left: 10%;*/
+  padding: 0px;
+}
+.nav > ul > li > div > ul > li {
+  display: block;
+  padding: 5px;
+  /*margin-top: 0px;*/
+  /*margin-bottom: 2px;*/
+}
+.nav > ul > li > div > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Oxygen, helvetica, cursive;
+  padding: 5px;
+}
+.nav > ul > li > div > ul > li:hover > a {
+  background-color: rgba( 255, 255, 255, 0.1);
+  border-radius: 15px 15px 15px 15px;
+}
+.nav > ul > li:hover > div {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+/*********************************************************************************/
+/*  Main Section Header                                                          */
+/*********************************************************************************/
+#main {
+  position: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ddd url(../images/header.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+  padding-top: 200px;
+}
+
+#logo {
+  visibility: hidden;
+  /*font-size: 50px;*/
+  margin-top: 0px;
+  padding-top: 50px;
+  font-family: Lobster, cursive;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+.logoSlogan {
+  /*visibility: hidden;*/
+  color: white;
+}
+
+#slogan {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Oxygen, helvetica, cursive;
+  margin-left: 400px;
+}
+/*********************************************************************************/
+/*  Footer                                                                       */
+/*********************************************************************************/
+#footer1{
+  height: 150px;
+  /*background-color: rgb(20,69,118);*/
+  /*background-color: rgb(14,48,82);*/
+  /*background-color: rgb(15,46,78);*/
+  background-color: rgb(21,44,67);
+
+  bottom: 41px;
+}
+.address{
+  margin-left: 4%;
+  /*margin-top: 10px;*/
+  float: left;
+  width: 25%;
+  /*border: 1px solid blue;*/
+}
+.address h2 {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-family: 'Montserrat', Oxygen, sans-serif;
+  margin-top: 5%;
+}
+.address p {
+  margin-left: 5%;
+  margin-top: -10px;
+  color: white;
+  font-size: 12px
+}
+.address a {
+  text-decoration: none;
+}
+hr.grey {
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+  /*border-bottom: 1px solid rgb(69, 64, 151);*/
+  /*margin: 10px 450px 0px 450px;*/
+  /*margin-top: 5px;*/
+  /*margin-right: 150px;*/
+}
+.icons-left {
+  /*float: left;*/
+  /*margin-left: -10px;*/
+  /*margin-top: -25px;*/
+  /*padding: 0px;*/
+  margin: -25px auto;
+  padding: 0px;
+  width: 80px;
+}
+.icons-left li {
+  display: inline;
+  height: 10px;
+  border-left: 10%;
+  /*margin-left: 8px;*/
+}
+#footer2{
+  position: relative;
+  height: 61px;
+  background-color: rgb(10,31,51);
+  bottom: 0px;
+}
+#trademark{
+  color: white;
+  margin-top: 0px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 16px
+} 

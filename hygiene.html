@@ -3,10 +3,13 @@
   <head>
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/main-phone.css" />
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/info-phone.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/hygiene/hygiene-phone.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 830px)" href="css/main-tab.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 830px)" href="css/info-tab.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 830px)" href="css/hygiene/hygiene-tab.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 831px)" href="css/main-wide.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 831px)" href="css/info-wide.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 831px)" href="css/hygiene/hygiene-wide.css" />
     <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 821px) and (max-width: 992px)" href="css/index/desk.css" /> -->
     <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 993px)" href="css/index/wide.css" /> -->
     
@@ -15,6 +18,9 @@
     <title>Alta Strand Camping & Apartments</title>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="favicon.ico" >
+
+    <!-- <link href="slider/js-image-slider.css" rel="stylesheet" type="text/css" /> -->
+    <script src="slider/js-image-slider.js" type="text/javascript"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript">
@@ -32,17 +38,15 @@
     <!-- Fixed Header -->
     <div id="fixed-header">
       <!-- Logo Fixed Header -->
-      <h3><a href="#" class="fixed-header-name">Alta Strand Camping </a></h3>
+      <h3><a href="index.html" class="fixed-header-name">Alta Strand Camping </a></h3>
       <!-- <h3><a href="#" class="fixed-header-name" id="nophone">Alta Strand Camping & Apartments </a></h3> -->
       <!-- Navigation bar Fixed Header -->
-      <!-- <div id="menu-small"> -->
-      <div id="menu"></div>
       <div class="nav"><ul>
         <!-- <li><a href="#">Home</a> -->
         <li><a>Facilities <span class="caret"></a>
           <div>
             <ul>
-              <li><a href="hygiene.html">Hygiene</a>
+              <li><a href="#">Hygiene</a>
               <li><a href="entertainment.html">Entertainment</a>
               <li><a href="dinning.html">Dining</a>
               <li><a href="shop.html">Shop</a>
@@ -86,13 +90,12 @@
     </div>
 
     <!-- Main -->
-    <div id="main">
+<!--     <div id="main">
       <h1 id="logo" class="logoSlogan"> Alta Strand Camping & Apartments </h1>
-      <!-- <span id="slogan" class="logoSlogan"> Comfort and nature have never been so close. </span> -->
-    </div>
+    </div> -->
 
 
-    <div id="main-info">
+<!--     <div id="main-info">
       <h1>INFORMATION</h1>
       <hr class="grey">
       <p class="infoSlogan">Open all year round, WiFi and showers included. </p>
@@ -118,9 +121,55 @@
         <div id="map_canvas"></div>
       </div>
 
+    </div> -->
+
+    <!-- Main -->
+    <div id="main-hygiene">
+      <!-- <h1> Facilities </h1> -->
+      <!-- <span id="slogan" class="logoSlogan"> Comfort and nature have never been so close. </span> -->
     </div>
 
-        <!-- Footer --> 
+    <div id="sliderFrame" class="grad">
+      <div id="slider">
+        <img src="images/facilities/laundry-large.jpg" />
+        <img src="images/facilities/laundry-large.jpg" />
+        <img src="images/facilities/laundry-large.jpg" />
+        <img src="images/facilities/laundry-large.jpg" />
+      </div>
+      <div id="htmlcaption" style="display: none;">
+        <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
+      </div>
+      <div id="test" style="display: none;">
+        Something
+      </div>
+    </div>
+
+    <div id="menu">
+      <div class="item">
+      </div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+<!--     <div id="sliderFrame">
+      <div id="slider">
+        <img src="images/facilities/sauna-700.jpg" />
+        <img src="images/facilities/sauna-700.jpg" alt="Welcome to Menucool.com" />
+        <img src="images/facilities/sauna2-700.jpg"/>
+        <img src="images/facilities/laundry-700.jpg" alt="Pure Javascript. No jQuery. No flash." />
+        <img src="images/image-slider-4.jpg" alt="#htmlcaption" />
+        <img src="images/image-slider-5.jpg" />
+      </div>
+      <div id="htmlcaption" style="display: none;">
+        <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
+      </div>
+      <div id="test" style="display: none;">
+        Something
+      </div>
+    </div> -->
+
+    <!-- Footer --> 
     <div id="footer1">
       <div class="address">
         <a href="info.html"> <h2>OUR LOCATION</h2> <a>
