@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 830px)" href="css/info-tab.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 831px)" href="css/main-wide.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 831px)" href="css/info-wide.css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/content.css" /> -->
+
     <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 821px) and (max-width: 992px)" href="css/index/desk.css" /> -->
     <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 993px)" href="css/index/wide.css" /> -->
     
@@ -15,6 +18,12 @@
     <title>Alta Strand Camping & Apartments</title>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="favicon.ico" >
+
+    <!-- <link href="slider/js-image-slider.css" rel="stylesheet" type="text/css" /> -->
+    <script src="slider/js-image-slider.js" type="text/javascript"></script>
+
+    <!-- <link href="slider/ninja-slider.css" rel="stylesheet" type="text/css" /> -->
+    <script src="slider/ninja-slider.js" type="text/javascript"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript">
@@ -35,8 +44,6 @@
       <h3><a href="#" class="fixed-header-name">Alta Strand Camping </a></h3>
       <!-- <h3><a href="#" class="fixed-header-name" id="nophone">Alta Strand Camping & Apartments </a></h3> -->
       <!-- Navigation bar Fixed Header -->
-      <!-- <div id="menu-small"> -->
-      <div id="menu"></div>
       <div class="nav"><ul>
         <!-- <li><a href="#">Home</a> -->
         <li><a>Facilities <span class="caret"></a>
@@ -44,7 +51,7 @@
             <ul>
               <li><a href="hygiene.html">Hygiene</a>
               <li><a href="entertainment.html">Entertainment</a>
-              <li><a href="dinning.html">Dining</a>
+              <li><a href="dining.html">Dining</a>
               <li><a href="shop.html">Shop</a>
             </ul>
           </div>
@@ -73,22 +80,21 @@
               <li><a href="festival.html">Festival</a>
             </ul>
           </div>
-        <li><a href="#">Info</a>
+        <li><a href="info.html">Info</a>
       </ul></div>
       <!-- </div> -->
       <!-- Social Icons Fixed Header -->
       <div><ul class="icons-right">
-        <li><a href="https://www.facebook.com/pages/Alta-Strand-Camping/330134333808174" class="icon"><img src="images/icons/facebook_32.png" height="28" width="28"></a></li>
-        <li><a href="https://twitter.com/AltaStrandCamp" class="icon"><img src="images/icons/twitter_32.png" height="28" width="28"></a></li>
-        <li><a href="https://www.linkedin.com/pub/alta-strand-camping/a0/51b/57b" class="icon"><img src="images/icons/linkedin_32.png" height="28" width="28"></a></li>
-        <li><a href="https://www.instagram.com/" class="icon"><img src="images/icons/instagram_32.png" height="28" width="28"></a></li>
+        <li><a href="https://www.facebook.com/pages/Alta-Strand-Camping/330134333808174" class="icon"><img src="images/social/facebook_32.png" height="28" width="28"></a></li>
+        <li><a href="https://twitter.com/AltaStrandCamp" class="icon"><img src="images/social/twitter_32.png" height="28" width="28"></a></li>
+        <li><a href="https://www.linkedin.com/pub/alta-strand-camping/a0/51b/57b" class="icon"><img src="images/social/linkedin_32.png" height="28" width="28"></a></li>
+        <li><a href="https://www.instagram.com/" class="icon"><img src="images/social/instagram_32.png" height="28" width="28"></a></li>
       </ul></div>
     </div>
 
     <!-- Main -->
     <div id="main">
       <h1 id="logo" class="logoSlogan"> Alta Strand Camping & Apartments </h1>
-      <!-- <span id="slogan" class="logoSlogan"> Comfort and nature have never been so close. </span> -->
     </div>
 
 
@@ -107,10 +113,10 @@
         <hr class="blue">
         <h2>SOCIALISE WITH US</h2></br>
         <ul class="icons-left">
-          <li><a href="https://www.facebook.com/pages/Alta-Strand-Camping/330134333808174" class="icon"><img src="images/icons/facebook_32.png" height="28" width="28"></a></li>
-          <li><a href="https://twitter.com/AltaStrandCamp" class="icon"><img src="images/icons/twitter_32.png" height="28" width="28"></a></li>
-          <li><a href="https://www.linkedin.com/pub/alta-strand-camping/a0/51b/57b" class="icon"><img src="images/icons/linkedin_32.png" height="28" width="28"></a></li>
-          <li><a href="https://www.instagram.com/" class="icon"><img src="images/icons/instagram_32.png" height="28" width="28"></a></li>
+          <li><a href="https://www.facebook.com/pages/Alta-Strand-Camping/330134333808174" class="icon"><img src="images/social/facebook_32.png" height="28" width="28"></a></li>
+          <li><a href="https://twitter.com/AltaStrandCamp" class="icon"><img src="images/social/twitter_32.png" height="28" width="28"></a></li>
+          <li><a href="https://www.linkedin.com/pub/alta-strand-camping/a0/51b/57b" class="icon"><img src="images/social/linkedin_32.png" height="28" width="28"></a></li>
+          <li><a href="https://www.instagram.com/" class="icon"><img src="images/social/instagram_32.png" height="28" width="28"></a></li>
         </ul>
       </div>
 
@@ -120,8 +126,10 @@
 
     </div>
 
-        <!-- Footer --> 
-    <div id="footer1">
+
+
+    <!-- Footer --> 
+<!--     <div id="footer1">
       <div class="address">
         <a href="info.html"> <h2>OUR LOCATION</h2> <a>
         <p> Alta Strand Camping </p> 
@@ -136,13 +144,13 @@
       <div class="address">
         <h2>SOCIALISE WITH US</h2></br>
         <ul class="icons-left">
-          <li><a href="https://www.facebook.com/" class="icon"><img src="images/icons/facebook_32.png" height="28" width="28"></a></li>
-          <li><a href="https://www.twitter.com/" class="icon"><img src="images/icons/twitter_32.png" height="28" width="28"></a></li>
-          <li><a href="https://www.linkedin.com/" class="icon"><img src="images/icons/linkedin_32.png" height="28" width="28"></a></li>
-          <li><a href="https://www.instagram.com/" class="icon"><img src="images/icons/instagram_32.png" height="28" width="28"></a></li>
+          <li><a href="https://www.facebook.com/" class="icon"><img src="images/social/facebook_32.png" height="28" width="28"></a></li>
+          <li><a href="https://www.twitter.com/" class="icon"><img src="images/social/twitter_32.png" height="28" width="28"></a></li>
+          <li><a href="https://www.linkedin.com/" class="icon"><img src="images/social/linkedin_32.png" height="28" width="28"></a></li>
+          <li><a href="https://www.instagram.com/" class="icon"><img src="images/social/instagram_32.png" height="28" width="28"></a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <div id="footer2">
       <p id="trademark">&copy 2014 Alta Strand Camping | Finnmark's luxury camping.<p>

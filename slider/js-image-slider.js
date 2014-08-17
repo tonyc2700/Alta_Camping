@@ -1,5 +1,4 @@
-var sliderOptions=
-{
+var sliderOptions= {
 	sliderId: "slider",
 	startSlide: 0,
 	effect: "13",

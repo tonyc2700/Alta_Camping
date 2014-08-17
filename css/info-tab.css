@@ -1,3 +1,22 @@
+#main-pic {
+  margin-top: 45px;
+  width: 100%;
+  background: #ddd url(../images/header-low.jpg) no-repeat center;
+  background-size: cover;
+  height: 150px;
+}
+@media screen and (min-width: 481px) and (max-width: 830px){
+    #main-pic {
+      margin-top: 60px;
+    }
+}
+@media screen and (max-width: 480px){
+  #main-pic { margin-top: 170px;}
+}
+
+@media screen and (max-width: 1320px) {
+  #menu { height: 450px;}
+}
 /*********************************************************************************/
 /*  Information Footer                                                           */
 /*********************************************************************************/

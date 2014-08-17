@@ -33,7 +33,6 @@ body {
   color: white;
 }
 .icons-right {
-  /*visibility: hidden;*/
   float: right;
   margin-left: 30%;
   margin-top: -125px;
@@ -46,8 +45,6 @@ body {
 }
 
 .nav {
-  /*visibility: hidden;*/
-  /*float: left;*/
   display: block;
   list-style-type: none;
   margin-top: 45px;
@@ -130,8 +127,6 @@ body {
   -transition: opacity 0.2s;
 }
 .nav > ul > li > div ul {
-  /*text-align: center;*/
-  /*margin-top: -15px;*/
   margin-left: 10%;
   padding: 0px;
 }
@@ -182,7 +177,6 @@ body {
 }
 
 .logoSlogan {
-  /*visibility: hidden;*/
   color: white;
 }
 
@@ -206,10 +200,8 @@ body {
 }
 .address{
   margin-left: 5%;
-  /*margin-top: 10px;*/
   float: left;
   width: 25%;
-  /*background: yellow;*/
 }
 .address h2 {
   text-align: center;
@@ -230,16 +222,8 @@ body {
 hr.grey {
   border: 0;
   border-bottom: 1px solid #e5e5e5;
-  /*border-bottom: 1px solid rgb(69, 64, 151);*/
-  /*margin: 10px 450px 0px 450px;*/
-  /*margin-top: 5px;*/
-  /*margin-right: 150px;*/
 }
 .icons-left {
-  /*margin-left: 10%;*/
-  /*float: left;*/
-  /*margin-left: -10px;*/
-  /*margin-top: -25px;*/
   margin: -25px auto;
   padding: 0px;
   width: 80px;

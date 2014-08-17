@@ -1,0 +1,141 @@
+/*Picture at the top*/
+/*@media screen and (min-width: 831px) {*/
+  #main-pic {
+    margin-top: 45px;
+    width: 100%;
+    background: #ddd url(../images/header-low.jpg) no-repeat center;
+    background-size: cover;
+    height: 150px;
+  }
+/*}*/
+@media screen and (min-width: 481px) and (max-width: 830px){
+    #main-pic {
+      margin-top: 60px;
+    }
+}
+@media screen and (max-width: 480px){
+  #main-pic { margin-top: 170px;}
+}
+
+@media screen and (max-width: 1320px) {
+  #menu { height: 450px;}
+}
+/*********************************************************************************/
+/*  Gallery                                                                      */
+/*********************************************************************************/
+/*    <div id="sliderFrame" class="grad">
+      <div id="slider">
+        <img src="images/facilities/laundry-large.jpg" />
+        <img src="images/facilities/sauna-large.jpg" />
+        <img src="images/facilities/sauna2-large.jpg" />
+        <img src="images/facilities/laundry-large.jpg" />
+      </div>
+    </div>*/
+#sliderFrame {
+  position:relative;
+  /*width:700px;*/
+  width: 100%;
+  margin:0 auto; /*center-aligned*/
+  height: 500px;
+  padding-top: 10px;
+}
+#slider{
+  width:1000px;height:460px;
+  /*width:700px;height:306px;/* Must be the same size as the slider images */
+  background:#fff url(loading.gif) no-repeat 50% 50%;
+  position:relative;
+  margin:0 auto; /*center-aligned*/
+  transform: translate3d(0,0,0);
+  box-shadow: 0px 1px 5px #999999;
+}
+/* ------ built-in navigation bullets wrapper ------*/ /* Note: check themes\2\js-image-slider.css to see how to hide nav bullets */
+#slider div.navBulletsWrapper  {
+  top:420px;/* Its position is relative to the #slider */
+  text-align:center;
+  background:none;
+  position:relative;
+  z-index:5;
+}
+/* each bullet */
+#slider div.navBulletsWrapper div {
+  width:11px; height:11px;
+  font-size:0;color: white;/*hide the index number in the bullet element*/
+  background:transparent url(bullet.png) no-repeat 0 0;
+  display:inline-block; *display:inline; zoom:1;
+  overflow:hidden;cursor:pointer;
+  margin:0 6px;/* set distance between each bullet*/
+}
+#slider div.navBulletsWrapper div.active {
+  background-position:0 -11px;
+}
+/* --------- Others ------- */
+#slider div.loading {
+    width:100%; height:100%;
+    background:transparent url(loading.gif) no-repeat 50% 50%;
+    filter: alpha(opacity=60);
+    opacity:0.6;
+    position:absolute;
+    left:0;
+    top:0; 
+    z-index:9;
+}
+#slider img {
+  position:absolute;
+  border:none;
+  display:none;
+}
+/*********************************************************************************/
+/*  Menu underneath gallery                                                      */
+/*********************************************************************************/
+#menu {
+  width: 100%;
+  height: 300px;
+  /*background: #25507A;*/
+  background: #1C3D5F;
+}
+@media screen and (max-width: 1320px) {
+  #menu { height: 450px;}
+}
+@media screen and (max-width: 660px) {
+  #menu { height: 850px;}
+  .item{ left: 20%;}
+}
+@media screen and (max-width: 480px) {
+  .item{ left: 10%;}
+}
+.grad {
+  /*height: 200px;*/
+  background: -webkit-linear-gradient(white, #1C3D5F); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, #1C3D5F); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, #1C3D5F); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, #1C3D5F); /* Standard syntax (must be last) */
+}
+.item{
+  /*display: none;*/
+  position: relative;
+  margin-top: 1%;
+  margin-left: 2%;
+  float: left;
+  width: 300px;
+  height: 200px;
+  background: white;
+  border-radius: 15px;
+  /*border: 1px solid black;*/
+}
+.item-icon {
+  float: left;
+  margin: 5px;
+}
+.item-title {
+  float: left;
+  font-weight: bold;
+  /*font-family: Lobster,helvetica, cursive;*/
+  font-family: Oxygen,helvetica, cursive;
+  margin: 15px 0px 0px 30px;
+  text-align: center;
+}
+.item-text {
+  float: left;
+  margin: 15px;
+}
+

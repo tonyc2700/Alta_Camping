@@ -1,27 +1,27 @@
+/*Picture at the top*/
 #main-hygiene {
   margin-top: 60px;
   width: 100%;
   background: #ddd url(../../images/header-low.jpg) no-repeat center;
-  background-size: cover; 
+  background-size: cover;
   height: 150px;
 }
-/* http://www.menucool.com */
-
+/*********************************************************************************/
+/*  Gallery                                                                      */
+/*********************************************************************************/
 #sliderFrame {
     position:relative;
     /*width:700px;*/
     width: 100%;
     margin:0 auto; /*center-aligned*/
     height: 500px;
-    /*background: yellow;*/ 
+    /*background: #546F8A; */
     padding-top: 10px;
 }
-
 #slider, #slider div.sliderInner {
     /*width:700px;height:306px;/* Must be the same size as the slider images */
     width:1000px;height:460px;
 }
-
 #slider {
   background:#fff url(loading.gif) no-repeat 50% 50%;
   position:relative;
@@ -29,7 +29,6 @@
     transform: translate3d(0,0,0);
     box-shadow: 0px 1px 5px #999999;
 }
-
 /* image wrapper */
 #slider a.imgLink, #slider div.video {
   z-index:2;
@@ -40,7 +39,6 @@
 #slider .video {
   background:transparent url(video.png) no-repeat 50% 50%;
 }
-
 /* Caption styles */
 #slider div.mc-caption-bg, #slider div.mc-caption-bg2 {
   position:absolute;
@@ -84,7 +82,6 @@
   position:relative;
   z-index:5;
 }
-
 /* each bullet */
 #slider div.navBulletsWrapper div 
 {
@@ -95,12 +92,9 @@
     overflow:hidden;cursor:pointer;
     margin:0 6px;/* set distance between each bullet*/
 }
-
 #slider div.navBulletsWrapper div.active {background-position:0 -11px;}
 
-
 /* --------- Others ------- */
-
 #slider div.loading 
 {
     width:100%; height:100%;
@@ -124,3 +118,53 @@
 }
 
 #slider>a, #slider video, #slider audio {display:none;}
+/*********************************************************************************/
+/*  Menu underneath gallery                                                      */
+/*********************************************************************************/
+#menu {
+  width: 100%;
+  height: 300px;
+  /*background: #25507A;*/
+  background: #1C3D5F;
+}
+@media screen and (max-width: 1320px) {
+  #menu { height: 450px;}
+}
+@media screen and (max-width: 660px) {
+  #menu { height: 850px;}
+  .item{ left: 20%;}
+}
+.grad {
+  /*height: 200px;*/
+  background: -webkit-linear-gradient(white, #1C3D5F); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, #1C3D5F); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, #1C3D5F); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, #1C3D5F); /* Standard syntax (must be last) */
+}
+.item{
+  /*display: none;*/
+  position: relative;
+  margin-top: 1%;
+  margin-left: 2%;
+  float: left;
+  width: 300px;
+  height: 200px;
+  background: white;
+  border-radius: 15px;
+  /*border: 1px solid black;*/
+}
+.item-icon {
+  float: left;
+  margin: 5px;
+}
+.item-title {
+  float: left;
+  font-weight: bold;
+  font-family: Lobster,helvetica, cursive;
+  margin: 15px 0px 0px 30px;
+  text-align: center;
+}
+.item-text {
+  float: left;
+}
+
