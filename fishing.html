@@ -3,41 +3,18 @@
   <head>
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/main-phone.css" />
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/info-phone.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/hygiene/hygiene-phone.css" /> -->
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 830px)" href="css/main-tab.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 830px)" href="css/info-tab.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 830px)" href="css/hygiene/hygiene-tab.css" /> -->
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 831px)" href="css/main-wide.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 831px)" href="css/info-wide.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 831px)" href="css/hygiene/hygiene-wide.css" /> -->
-
-    <link rel="stylesheet" type="text/css" href="css/content.css" />
-
-    <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 821px) and (max-width: 992px)" href="css/index/desk.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 993px)" href="css/index/wide.css" /> -->
-    
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <title>Fishing | Alta Strand Camping & Apartments</title>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <title>Fishing | Alta Strand Camping & Apartments</title>
     <link rel="shortcut icon" href="favicon.ico" >
-
-    <!-- <link href="slider/js-image-slider.css" rel="stylesheet" type="text/css" /> -->
-    <script src="slider/js-image-slider.js" type="text/javascript"></script>
-
-    <!-- <link href="slider/ninja-slider.css" rel="stylesheet" type="text/css" /> -->
-    <script src="slider/ninja-slider.js" type="text/javascript"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script type="text/javascript">
-      function initialise(){
-        var myOptions = {zoom:13,center:new google.maps.LatLng(69.92762309999999,23.271842200000037),mapTypeId: google.maps.MapTypeId.ROADMAP};
-        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-        marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(69.92762309999999, 23.271842200000037)});
-        infowindow = new google.maps.InfoWindow({content:"<b>Alta Strand Camping</b><br/>Steinfossveien 29<br/>9518 Alta" });
-        google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
-        infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', initialise);
-    </script>
   </head>
 
   <body>
@@ -95,51 +72,21 @@
       </ul></div>
     </div>
 
-    <!-- Main -->
-<!--     <div id="main">
-      <h1 id="logo" class="logoSlogan"> Alta Strand Camping & Apartments </h1>
-    </div> -->
-
-
-<!--     <div id="main-info">
-      <h1>INFORMATION</h1>
-      <hr class="grey">
-      <p class="infoSlogan">Open all year round, WiFi and showers included. </p>
-
-      <div id="right">
-        <h2>OUR LOCATION</h2>
-        <p> Alta Strand Camping </br> Steinfossveien 29, </br>  9518 Alta, Norway </p>
-        <hr class="blue">
-        <h2>EMAIL & PHONE</h2>
-        <p> mail@altacamping.no </p>
-        <p> +47 78434022</p>
-        <hr class="blue">
-        <h2>SOCIALISE WITH US</h2></br>
-        <ul class="icons-left">
-          <li><a href="https://www.facebook.com/pages/Alta-Strand-Camping/330134333808174" class="icon"><img src="images/social/facebook_32.png" height="28" width="28"></a></li>
-          <li><a href="https://twitter.com/AltaStrandCamp" class="icon"><img src="images/social/twitter_32.png" height="28" width="28"></a></li>
-          <li><a href="https://www.linkedin.com/pub/alta-strand-camping/a0/51b/57b" class="icon"><img src="images/social/linkedin_32.png" height="28" width="28"></a></li>
-          <li><a href="https://www.instagram.com/" class="icon"><img src="images/social/instagram_32.png" height="28" width="28"></a></li>
-        </ul>
-      </div>
-
-      <div id="left">
-        <div id="map_canvas"></div>
-      </div>
-
-    </div> -->
-
     <!-- Main header picture -->
     <div id="main-pic"></div>
 
     <!-- Main Slide Gallery-->
     <div>
-      <div id="ninja-slider" class="grad">
-        <ul>
-          <li><div data-image="images/fishing/pic1.jpg"></div></li>
-          <li><div data-image="images/fishing/pic2.jpg"></div></li>
-          <li><div data-image="images/fishing/pic3.jpg"></div></li>
-        </ul>
+      <div id="slick-slider" class="grad">
+          <div class="slide">
+            <img src="images/fishing/pic1.jpg">
+          </div>
+          <div class="slide">
+            <img src="images/fishing/pic2.jpg">
+          </div>
+          <div class="slide">
+            <img src="images/fishing/pic3.jpg">
+          </div>
       </div>
     </div>
     <!-- Main menu -->
@@ -188,6 +135,9 @@
     <div id="footer2">
       <p id="trademark">&copy 2014 Alta Strand Camping | Finnmark's luxury camping.<p>
     </div>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
 
   </body>
 

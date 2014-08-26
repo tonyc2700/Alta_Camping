@@ -84,6 +84,30 @@
   border:none;
   display:none;
 }
+
+#slick-slider{
+  display: block;
+  width: 100%;
+  padding: 40px 0;
+}
+#slick-slider .slide{
+  text-align: center;
+}
+#slick-slider .slide img{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+.slick-slider{
+  margin-bottom: 0;
+}
+.slick-dots{
+  bottom: -5px;
+}
+.slick-dots li.slick-active button::before, .slick-dots li button::before{
+  font-size: 15px;
+  color: white;
+}
 /*********************************************************************************/
 /*  Gallery                                                                      */
 /*********************************************************************************/
@@ -184,13 +208,16 @@
 /*  Menu underneath gallery                                                      */
 /*********************************************************************************/
 #menu {
+  padding: 20px 0;
   width: 100%;
   height: 300px;
+  display: inline-block;
+  text-align: center;
   /*background: #25507A;*/
   background: #1C3D5F;
 }
 @media screen and (max-width: 1320px) {
-  #menu { height: 550px;}
+  /*#menu { height: 550px;}*/
 }
 @media screen and (max-width: 660px) {
   #menu { height: 1050px;}
@@ -211,7 +238,8 @@
   position: relative;
   margin-top: 1%;
   margin-left: 2%;
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
   width: 300px;
   height: 250px;
   background: white;
@@ -235,12 +263,13 @@
   margin: 5px 15px;
   line-height: 100%;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 .item-bullet {
   list-style-type: disc;
   float: left;
   margin: 5px 15px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
